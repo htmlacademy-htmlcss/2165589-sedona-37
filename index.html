@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -48,9 +49,10 @@
 
 <main class="main-index">
   <header class="main-header">
-    <h1 class="visually-hidden">Седона</h1>
-    <img class="background-logo" src="images/index-background.jpg" width="1200" height="485" alt="Пейзаж Седоны">
-    <img class="logo-welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+    <section class="greeting">
+    <img class="greeting-logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+    </section>
     <section class="lead">
       <h2 class="lead-title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h2>
@@ -114,7 +116,7 @@
     <section class="search-hotel">
       <h2 class="search-hotel-title">Заинтересовались?</h2>
       <p class="search-hotel-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="button button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
+      <a class="button button-search-hotel" href="catalog.html">Поиск гостиницы в Седоне</a>
     </section>
   </header>
 </main>
@@ -123,12 +125,11 @@
   <section class="subscription">
     <h2 class="subscription-title">Подпишитесь на рассылку</h2>
     <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <img src="images/subscribe-title.jpg" width="1200" height="800" alt="Замутнённый вид гор">
     <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
       <p class="subscription-form-email">
         <label class="subscription-form-label" for="subscription-email">
-          <input class="subscription-form-input" type="email" id="subscription-email" name="subscription-email" placeholder="email@example.com">
-          <button class="subscription-form-button" type="submit">Подписаться</button>
+          <input class="subscription-form-input" type="email" id="subscription-email" name="subscription-email" placeholder="Ваш e-mail">
+          <input class="button subscription-form-button" type="submit" value="Подписаться">
         </label>
       </p>
     </form>
