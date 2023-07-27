@@ -19,7 +19,7 @@
         <a class="navigation-link" href="#">О Седоне</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link  navigation-link-current" href="#">Гостиницы</a>
+        <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
     <ul class="navigation-list navigation-user">
@@ -28,7 +28,7 @@
           <span class="visually-hidden">
             Поиск
           </span>
-          <img src="images/search.svg" width="18" height="18" alt="Значок поиска">
+          <img src="images/search.svg" width="18px" height="18px" alt="Значок поиска">
         </a>
       </li>
       <li class="navigation-item">
@@ -36,7 +36,7 @@
           <span class="visually-hidden">
             Понравившиеся отели
           </span>
-          <img src="images/like.svg" width="28" height="31" alt="Значок сердечка">
+          <img src="images/like.svg" width="28px" height="31px" alt="Значок сердечка">
         </a>
       </li>
       <li class="navigation-item">
@@ -67,7 +67,7 @@
     </ul>
     <h2 class="visually-hidden">Форма поиска</h2>
     <form class="catalog-search-form" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="catalog-search-form-fieldset">
+      <fieldset class="catalog-search-form-fieldset infrastructure-fieldset">
         <legend class="catalog-search-form-fieldset-legend">Инфраструктура:</legend>
         <label class="catalog-search-form-fieldset-answer">
           <input class="catalog-search-form-fieldset-input-checkbox" type="checkbox" name="swimming-pool" checked>
@@ -82,7 +82,7 @@
           Wi-Fi
         </label>
       </fieldset>
-      <fieldset class="catalog-search-form-fieldset">
+      <fieldset class="catalog-search-form-fieldset home-fieldset">
         <legend class="catalog-search-form-fieldset-legend">Тип Жилья:</legend>
         <label class="catalog-search-form-fieldset-answer">
           <input class="catalog-search-form-fieldset-input-radio" type="radio" name="home-type" value="Hotel" checked>
@@ -98,7 +98,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="catalog-search-form-fieldset">
+      <fieldset class="catalog-search-form-fieldset price-fieldset">
         <legend class="catalog-search-form-fieldset-legend">
           Стоимость, ₽:
         </legend>
@@ -111,38 +111,42 @@
           до
         </label>
       </fieldset>
-      <button class="button catalog-search-form-button-submit" type="submit">
-        Применить
-      </button>
-      <button class="button catalog-search-form-button-reset" type="reset">
-        Сбросить
-      </button>
+      <div class="button-container">
+        <button class="button catalog-search-form-button-submit" type="submit">
+          Применить
+        </button>
+        <button class="button catalog-search-form-button-reset" type="reset">
+          Сбросить
+        </button>
+      </div>
     </form>
   </section>
   <section class="catalog-list">
-    <h2 class="catalog-list-title">Найдено гостиниц: 38</h2>
-    <select class="catalog-list-select" name="catalog-list-select" aria-label="Сортировка">
-      <option class="catalog-list-item" name="expensive-first">Сначала дорогие</option>
-      <option class="catalog-list-item" name="cheap-first">Сначала дешёвые</option>
-      <option class="catalog-list-item" name="popular-first">Сначала высокий рейтинг</option>
-    </select>
-    <ul class="catalog-list-items">
-      <li class="catalog-list-view-control view-control-selected">
-        <a class="catalog-list-view-control-link" href="">
-          <img class="catalog-list-view-control-img" src="images/sort-type/table.svg" width="16" height="14" alt="Вид табличного представления">
-        </a>
-      </li>
-      <li class="catalog-list-view-control">
-        <a class="catalog-list-view-control-link" href="">
-          <img class="catalog-list-view-control-img" src="images/sort-type/block.svg" width="16" height="14" alt="Вид блочного представления">
-        </a>
-      </li>
-      <li class="catalog-list-view-control">
-        <a class="catalog-list-view-control-link" href="">
-          <img class="catalog-list-view-control-img" src="images/sort-type/list.svg" width="16" height="14" alt="Вид списочного представления">
-        </a>
-      </li>
-    </ul>
+    <div class="catalog-container">
+      <h2 class="catalog-list-title">Найдено гостиниц: 38</h2>
+      <select class="catalog-list-select" name="catalog-list-select" aria-label="Сортировка">
+        <option class="catalog-list-item" name="expensive-first">Сначала дорогие</option>
+        <option class="catalog-list-item" name="cheap-first">Сначала дешёвые</option>
+        <option class="catalog-list-item" name="popular-first">Сначала высокий рейтинг</option>
+      </select>
+      <ul class="catalog-list-items">
+        <li class="catalog-list-view-control view-control-selected">
+          <a class="catalog-list-view-control-link" href="">
+            <img class="catalog-list-view-control-img" src="images/sort-type/table.svg" width="16" height="14" alt="Вид табличного представления">
+          </a>
+        </li>
+        <li class="catalog-list-view-control">
+          <a class="catalog-list-view-control-link" href="">
+            <img class="catalog-list-view-control-img" src="images/sort-type/block.svg" width="16" height="14" alt="Вид блочного представления">
+          </a>
+        </li>
+        <li class="catalog-list-view-control">
+          <a class="catalog-list-view-control-link" href="">
+            <img class="catalog-list-view-control-img" src="images/sort-type/list.svg" width="16" height="14" alt="Вид списочного представления">
+          </a>
+        </li>
+      </ul>
+    </div>
     <ul class="catalog-list-hotels-items">
       <li class="catalog-list-hotels-item">
         <img src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Карточка гостиницы Amara Resort & Spa">
